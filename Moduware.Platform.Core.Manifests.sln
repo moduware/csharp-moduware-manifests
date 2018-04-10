@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moduware.Platform.Core.Manifests", "Moduware.Platform.Core.Manifests.csproj", "{B5C07C4B-B29B-4146-9DB2-0A46E7F75DAA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Develop|Any CPU = Develop|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5C07C4B-B29B-4146-9DB2-0A46E7F75DAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5C07C4B-B29B-4146-9DB2-0A46E7F75DAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5C07C4B-B29B-4146-9DB2-0A46E7F75DAA}.Develop|Any CPU.ActiveCfg = Develop|Any CPU
+		{B5C07C4B-B29B-4146-9DB2-0A46E7F75DAA}.Develop|Any CPU.Build.0 = Develop|Any CPU
+		{B5C07C4B-B29B-4146-9DB2-0A46E7F75DAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5C07C4B-B29B-4146-9DB2-0A46E7F75DAA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {32831D12-23FF-4322-B9DF-3C19E69E912C}
+	EndGlobalSection
+EndGlobal
