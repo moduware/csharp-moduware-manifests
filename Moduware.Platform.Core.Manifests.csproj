@@ -40,9 +40,11 @@
     <Compile Include="GatewayManifest.cs" />
     <Compile Include="Manifest.cs" />
     <Compile Include="ModuleManifest.cs" />
+    <Compile Include="NativeTileInstallationLinks.cs" />
     <Compile Include="ProductManifest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TileManifest.cs" />
+    <Compile Include="TileType.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">

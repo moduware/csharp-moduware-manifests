@@ -74,30 +74,4 @@ namespace Moduware.Platform.Core.Manifests
 
         #endregion
     }
-
-    public enum TileType
-    {
-        /// <summary>
-        /// This tile runs in a webview
-        /// </summary>
-        [JsonProperty("webview")] WebView,
-
-        /// <summary>
-        /// This tile runs as a separate application
-        /// </summary>
-        [JsonProperty("native")] Native
-    }
-
-    public struct NativeTileInstallationLinks
-    {
-        /// <summary>
-        /// Link to install native tile on Android platform
-        /// </summary>
-        [JsonProperty("android")] public Uri Android;
-
-        /// <summary>
-        /// Link to install native tile on iOS platform
-        /// </summary>
-        [JsonProperty("ios")] public Uri iOS;
-    }
 }
