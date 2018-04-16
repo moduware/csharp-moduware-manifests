@@ -72,6 +72,9 @@ namespace Moduware.Platform.Core.Manifests
             set => TextColor = value;
         }
 
+        [JsonProperty("builtIn")]
+        public bool BuiltIn { get; set; } = false;
+
         #endregion
     }
 }
