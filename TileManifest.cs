@@ -43,7 +43,8 @@ namespace Moduware.Platform.Core.Manifests
         /// <summary>
         /// Links to install native tile from on every specific platform
         /// </summary>
-        [JsonProperty("installationLinks")] public NativeTileInstallationLinks InstallationLinks;
+        [JsonProperty("installationLinks")]
+        public NativeTileInstallationLinks InstallationLinks;
 
         #region Appearance
 
