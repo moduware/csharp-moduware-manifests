@@ -8,13 +8,13 @@ namespace Moduware.Platform.Core.Manifests
         /// <summary>
         /// The latest ble version.
         /// </summary>
-        [JsonProperty("bootloaderVersion"), JsonConverter(typeof(Newtonsoft.Json.Converters.VersionConverter))]
+        [JsonProperty("bluetoothFirmwareVersion"), JsonConverter(typeof(Newtonsoft.Json.Converters.VersionConverter))]
         public Version BluetoothFirmwareVersion = new Version("0.0.0");
 
         /// <summary>
         /// The changes in this ble version.
         /// </summary>
-        [JsonProperty("bootloaderChanges")]
+        [JsonProperty("bluetoothFirmwareChanges")]
         public string ChangesInThisBluetoothFirmwareVersion;
 
 
