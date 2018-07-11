@@ -29,7 +29,7 @@
     <WarningLevel>4</WarningLevel>
     <DocumentationFile>bin\Release\Moduware.Platform.Core.Manifests.xml</DocumentationFile>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Develop|AnyCPU' ">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Production|AnyCPU' ">
     <Optimize>false</Optimize>
     <OutputPath>bin\Develop</OutputPath>
     <WarningLevel>4</WarningLevel>
