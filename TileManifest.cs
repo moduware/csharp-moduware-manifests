@@ -18,7 +18,6 @@ namespace Moduware.Platform.Core.Manifests
         [JsonProperty("minimumAppVersion"), JsonConverter(typeof(Newtonsoft.Json.Converters.VersionConverter))]
         public Version MinimumAppVersion = new Version("0.0.0");
 
-        // TODO: Should trigger warning when used, will be removed in ~1.1.5
         /// <summary>
         /// Backwards compatibility field, to support tiles that are using old non-standard field naming
         /// </summary>
@@ -63,7 +62,6 @@ namespace Moduware.Platform.Core.Manifests
         /// </summary>
         [JsonProperty("textColor")] public string TextColor;
 
-        // TODO: Should trigger warning when used, will be removed in ~1.1.5
         /// <summary>
         /// Backwards compatibility field, to support tiles that are using old non-standard field naming
         /// </summary>
