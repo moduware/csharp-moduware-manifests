@@ -37,6 +37,8 @@
   <ItemGroup>
     <Compile Include="Enumerations\ModuleOrientation.cs" />
     <Compile Include="Enumerations\ProductFirmwareType.cs" />
+    <Compile Include="FirmwareManifest.cs" />
+    <Compile Include="FirmwareType.cs" />
     <Compile Include="GatewayManifest.cs" />
     <Compile Include="Manifest.cs" />
     <Compile Include="ModuleManifest.cs" />
