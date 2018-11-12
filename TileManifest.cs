@@ -10,21 +10,14 @@ namespace Moduware.Platform.Core.Manifests
     public class TileManifest : Manifest
     {
         /// <summary>
-        /// Version of stable tile
+        /// Versions of a tile
         /// </summary>
-        [JsonProperty("stableTileVersion"), JsonConverter(typeof(Newtonsoft.Json.Converters.VersionConverter))]
-        public Version StableTileVersion = new Version("0.0.0");
-
-        /// <summary>
-        /// Version of beta tile
-        /// </summary>
-        [JsonProperty("betaTileVersion"), JsonConverter(typeof(Newtonsoft.Json.Converters.VersionConverter))]
-        public Version BetaTileVersion = new Version("0.0.0");
-
-        /// <summary>
-        /// Version of alpha tile
-        /// </summary>
-        [JsonProperty("alphaTileVersion"), JsonConverter(typeof(Newtonsoft.Json.Converters.VersionConverter))]
-        public Version AlphaTileVersion = new Version("0.0.0");
+        [JsonProperty("versions")]
+        public VersionLevels versions = new VersionLevels
+        {
+            Stable = new Version("0.0.0"),
+            Beta = new Version("0.0.0"),
+            Alpha = new Version("0.0.0")
+        };
     }
 }

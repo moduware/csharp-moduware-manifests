@@ -1,5 +1,6 @@
 ﻿using System;
 using Moduware.Platform.Core.Manifests.Abstractions;
+using Moduware.Platform.Core.Manifests.Structures;
 using Newtonsoft.Json;
 
 namespace Moduware.Platform.Core.Manifests
@@ -7,22 +8,15 @@ namespace Moduware.Platform.Core.Manifests
     public class GatewayManifest : ProductManifest
     {
         /// <summary>
-        /// Version of stable bluetooth firmware
+        /// Versions of a bluetooth firmware
         /// </summary>
-        [JsonProperty("stableBluetoothFirmwareVersion"), JsonConverter(typeof(Newtonsoft.Json.Converters.VersionConverter))]
-        public Version StableBluetoothFirmwareVersion = new Version("0.0.0");
-
-        /// <summary>
-        /// Version of beta bluetooth firmware
-        /// </summary>
-        [JsonProperty("betaBluetoothFirmwareVersion"), JsonConverter(typeof(Newtonsoft.Json.Converters.VersionConverter))]
-        public Version BetaBluetoothFirmwareVersion = new Version("0.0.0");
-
-        /// <summary>
-        /// Version of alpha bluetooth firmware
-        /// </summary>
-        [JsonProperty("alphaBluetoothFirmwareVersion"), JsonConverter(typeof(Newtonsoft.Json.Converters.VersionConverter))]
-        public Version AlphaBluetoothFirmwareVersion = new Version("0.0.0");
+        [JsonProperty("bluetoothFirmwareVersions")]
+        public VersionLevels BluetoothFirmwareVersions = new VersionLevels
+        {
+            Stable = new Version("0.0.0"),
+            Beta = new Version("0.0.0"),
+            Alpha = new Version("0.0.0")
+        };
 
         #region OBSOLETE
         /// <summary>

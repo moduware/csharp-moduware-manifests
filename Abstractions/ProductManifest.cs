@@ -1,5 +1,6 @@
 ﻿using System;
 using Moduware.Platform.Core.Manifests.Enumerations;
+using Moduware.Platform.Core.Manifests.Structures;
 using Newtonsoft.Json;
 
 namespace Moduware.Platform.Core.Manifests.Abstractions
@@ -7,22 +8,15 @@ namespace Moduware.Platform.Core.Manifests.Abstractions
     public class ProductManifest : Manifest
     {
         /// <summary>
-        /// Version of stable firmware
+        /// Versions of a firmware
         /// </summary>
-        [JsonProperty("stableFirmwareVersion"), JsonConverter(typeof(Newtonsoft.Json.Converters.VersionConverter))]
-        public Version StableFirmwareVersion = new Version("0.0.0");
-
-        /// <summary>
-        /// Version of beta firmware
-        /// </summary>
-        [JsonProperty("betaFirmwareVersion"), JsonConverter(typeof(Newtonsoft.Json.Converters.VersionConverter))]
-        public Version BetaFirmwareVersion = new Version("0.0.0");
-
-        /// <summary>
-        /// Version of alpha firmware
-        /// </summary>
-        [JsonProperty("alphaFirmwareVersion"), JsonConverter(typeof(Newtonsoft.Json.Converters.VersionConverter))]
-        public Version AlphaFirmwareVersion = new Version("0.0.0");
+        [JsonProperty("firmwareVersions")]
+        public VersionLevels FirmwareVersions = new VersionLevels
+        {
+            Stable = new Version("0.0.0"),
+            Beta = new Version("0.0.0"),
+            Alpha = new Version("0.0.0")
+        };
 
         #region OBSOLETE
         /// <summary>

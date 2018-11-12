@@ -48,6 +48,7 @@
     <Compile Include="Structures\NativeTileInstallationLinks.cs" />
     <Compile Include="Abstractions\ProductManifest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Structures\VersionLevels.cs" />
     <Compile Include="TileManifest.cs" />
     <Compile Include="Enumerations\TileType.cs" />
     <Compile Include="TileVersionManifest.cs" />
