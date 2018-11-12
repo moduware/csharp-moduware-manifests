@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Moduware.Platform.Core.Manifests
+namespace Moduware.Platform.Core.Manifests.Enumerations
 {
     public enum FirmwareType
     {

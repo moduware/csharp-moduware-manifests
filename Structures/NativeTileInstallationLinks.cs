@@ -1,7 +1,7 @@
 ﻿using System;
 using Newtonsoft.Json;
 
-namespace Moduware.Platform.Core.Manifests
+namespace Moduware.Platform.Core.Manifests.Structures
 {
     public struct NativeTileInstallationLinks
     {

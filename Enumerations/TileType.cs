@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace Moduware.Platform.Core.Manifests
+namespace Moduware.Platform.Core.Manifests.Enumerations
 {
     public enum TileType
     {

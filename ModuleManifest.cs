@@ -1,4 +1,5 @@
-﻿using Moduware.Platform.Core.Manifests.Enumerations;
+﻿using Moduware.Platform.Core.Manifests.Abstractions;
+using Moduware.Platform.Core.Manifests.Enumerations;
 using Newtonsoft.Json;
 
 namespace Moduware.Platform.Core.Manifests
