@@ -35,7 +35,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Abstractions\UpdateManifest.cs" />
+    <Compile Include="Abstractions\VersionManifest.cs" />
     <Compile Include="BluetoothFirmwareVersionManifest.cs" />
     <Compile Include="Enumerations\ModuleOrientation.cs" />
     <Compile Include="Enumerations\ProductFirmwareType.cs" />
@@ -43,6 +43,7 @@
     <Compile Include="FirmwareVersionManifest.cs" />
     <Compile Include="GatewayManifest.cs" />
     <Compile Include="Abstractions\Manifest.cs" />
+    <Compile Include="LegacyTileManifest.cs" />
     <Compile Include="ModuleManifest.cs" />
     <Compile Include="Structures\NativeTileInstallationLinks.cs" />
     <Compile Include="Abstractions\ProductManifest.cs" />
