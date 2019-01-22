@@ -7,21 +7,21 @@ using System.Threading.Tasks;
 
 namespace Moduware.Platform.Core.Manifests.Structures
 {
-    public struct VersionLevels
+    public class VersionLevels
     {
         /// <summary>
         /// Stable (production) version
         /// </summary>
-        [JsonProperty("stable")] public Version Stable;
+        [JsonProperty("stable")] public Version Stable = new Version("0.0.0");
 
         /// <summary>
         /// Beta (pre-release) version
         /// </summary>
-        [JsonProperty("beta")] public Version Beta;
+        [JsonProperty("beta")] public Version Beta = new Version("0.0.0");
 
         /// <summary>
         /// Alpha (devs-only) version
         /// </summary>
-        [JsonProperty("alpha")] public Version Alpha;
+        [JsonProperty("alpha")] public Version Alpha = new Version("0.0.0");
     }
 }
