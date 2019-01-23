@@ -12,16 +12,19 @@ namespace Moduware.Platform.Core.Manifests.Structures
         /// <summary>
         /// Stable (production) version
         /// </summary>
-        [JsonProperty("stable")] public Version Stable = new Version("0.0.0");
+        [JsonProperty("stable"), JsonConverter(typeof(Newtonsoft.Json.Converters.VersionConverter))]
+        public Version Stable = new Version("0.0.0");
 
         /// <summary>
         /// Beta (pre-release) version
         /// </summary>
-        [JsonProperty("beta")] public Version Beta = new Version("0.0.0");
+        [JsonProperty("beta"), JsonConverter(typeof(Newtonsoft.Json.Converters.VersionConverter))]
+        public Version Beta = new Version("0.0.0");
 
         /// <summary>
         /// Alpha (devs-only) version
         /// </summary>
-        [JsonProperty("alpha")] public Version Alpha = new Version("0.0.0");
+        [JsonProperty("alpha"), JsonConverter(typeof(Newtonsoft.Json.Converters.VersionConverter))]
+        public Version Alpha = new Version("0.0.0");
     }
 }
